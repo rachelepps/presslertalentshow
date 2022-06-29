@@ -1,0 +1,237 @@
+/* ===================================
+        production section
+====================================== */
+.production-sec{}
+.production-sec .production-box{
+    padding: 15px;
+}
+
+.production-sec .production-box i{
+    font-size: 60px;
+    margin-bottom: 8px;
+    transition: .5s ease;
+}
+.production-sec .production-box:hover i{
+    transform: translateY(-15px);
+}
+.production-sec .production-box .production-heading{
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 12px;
+    transition: .5s ease;
+}
+.production-sec .production-box:hover .production-heading{
+color: #FFBF00;
+}
+.production-sec .production-box .production-des{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+/* ===================================
+            Video sec css
+====================================== */
+.video-sec{
+padding-top: 0;
+    margin-top: 120px;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+.video-sec .video-btn{
+    display: inline-block;
+}
+
+.video-sec .video-btn .play-btn {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 65px;
+    border-radius: 50%;
+    color: #FFBF00;
+    cursor: pointer;
+}
+.video-sec .video-btn .play-btn:hover{
+    background-color: #FFBF00;
+    color: #fff !important;
+}
+
+.video-sec.bg-video-img{
+    background-image: url("../img/video-img.jpg");
+    position: relative;
+    height:550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center
+}
+
+.fancybox-slide--video .fancybox-content {
+    background: transparent;
+}
+
+/* ===================================
+   list item
+====================================== */
+.latest-items{
+    padding-bottom: 120px;
+}
+.latest-items .list-item-slider .item{
+    position:relative ;
+    cursor: pointer;
+}
+.latest-items .list-item-slider .item .overlay-item{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    bottom: 5%;
+    right: 5%;
+    border: solid 1px #FFBF00;
+    z-index: 11;
+    transition: .8s ease;
+    opacity: 0;
+}
+.latest-items .list-item-slider .item {
+    overflow: hidden;
+}
+.latest-items .list-item-slider .item .overlay-item i{
+    color: #FFBF00;
+    font-size: 100px;
+}
+.latest-items .list-item-slider .item:hover .overlay-item{
+    opacity: 1;
+    animation: .5s zoomIn;
+}
+.latest-items .list-item-slider .item .product-img{
+    overflow: hidden;
+    position: relative;
+}
+.latest-items .list-item-slider .item img{
+    height: 100%;
+    width: 100%;
+}
+.latest-items .list-item-slider .item:hover img{
+    transform: scale(1.1);
+}
+.latest-items .list-item-slider .item .product-detail{
+    padding: 20px 15px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    transition: .8s ease;
+}
+.latest-items .list-item-slider .item:hover .product-detail{
+    background-color: #FFBF00;
+}
+.latest-items .list-item-slider .item .product-detail .heading{
+    font-size: 20px;
+    font-family: Oswald , sans-serif;
+    width: 90%;
+    display: inline-block;
+    float: left;
+    /*transition: .8s ease;*/
+}
+.latest-items .list-item-slider .item:hover .product-detail .heading{
+    color: #FFFFFF;
+}
+.latest-items .list-item-slider .item .product-detail .text-des{
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    /*transition: .8s ease;*/
+}
+.latest-items .list-item-slider .item:hover .product-detail .text-des{
+    color: #FFFFFF;
+}
+.latest-items .list-item-slider .item .product-detail .watch-product{
+    width: 10%;
+    display: inline-block;
+    float: right;
+}
+.latest-items .list-item-slider .item .product-detail .watch-product i{
+    font-size: 20px;
+}
+.latest-items .list-item-slider .item:hover .product-detail .watch-product i{
+    color: #FFFFFF;
+}
+
+/* ===================================
+       portfolio  section css
+====================================== */
+
+.portfolio-sec{
+    padding-top: 120px;
+    background-color: #f9f9f9;
+    padding-bottom: 120px;
+}
+.portfolio-heading .heading-details{
+    margin-bottom: 50px;
+}
+.portfolio-sec .cbp-l-filters-alignCenter {
+    margin-bottom: 10px;
+}
+.portfolio-sec .cbp-l-filters-alignCenter .cbp-filter-item{
+    background-color: transparent;
+    /*border: 1px solid #d9d9d9;*/
+    padding: 7px 0;
+    margin-right: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+    opacity: .8;
+}
+.portfolio-sec .cbp-l-filters-alignCenter .cbp-filter-item:after{
+    content: "/";
+    margin-left: 7px;
+}
+.portfolio-sec .cbp-l-filters-alignCenter .cbp-filter-item:last-child:after{
+    display: none;
+}
+.portfolio-sec .cbp-l-filters-alignCenter .cbp-filter-item.cbp-filter-item-active {
+    color: #FFBF00;
+}
+.portfolio-sec  .cbp-l-filters-alignCenter .cbp-filter-item:hover .cbp-filter-counter {
+    -webkit-transform: translateY(-41px);
+    -ms-transform: translateY(-41px);
+    transform: translateY(-41px);
+    background-color: #FFBF00;
+    color: #FFFFFF;
+}
+.portfolio-sec  .cbp-l-filters-alignCenter .cbp-filter-counter:after {
+    border-top: 4px solid #FFBF00;
+}
+.portfolio-sec .cbp-l-loadMore-text .cbp-l-loadMore-link, .cbp-l-loadMore-text .cbp-l-loadMore-text-link {
+    font: 400 15px "Open Sans", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+    display: inline-block;
+    border: solid 1px #FFBF00;
+    padding: 8px 30px;
+    color: #FFBF00;
+}
+.portfolio-sec .cbp-caption-zoom .cbp-caption-activeWrap {
+
+    color: #FFFFFF;
+}
+.cbp-caption-zoom .cbp-caption:hover .cbp-caption-activeWrap {
+    background-color: rgba(255, 191, 0, 0.8);
+}
+.portfolio-sec .cbp-l-caption-desc .fly-line{
+    background-color: #FFFFFF;
+    margin-top: 7px;
+}
+.portfolio-sec .cbp-l-caption-title {
+    color: #fff;
+    font: 400 20px/21px 'Roboto', sans-serif;
+}
