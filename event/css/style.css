@@ -166,6 +166,12 @@ html{
     transition-delay: calc((5 - 1) * 0.1s);
 }
 
+/* Disclaimer Mobile Styles */
+
+.disclaimer {
+    margin-top: 15px;
+}
+
 /*************************************/
 /************** LOADER CSS ***********/
 /*************************************/
@@ -2086,6 +2092,10 @@ header .navigation-toggle.fix-top .slider-social a{
     .broad-nav .navbar {
         top: 200px;
         padding-right: 0;
+    }
+    .disclaimer {
+        line-height: 16px;
+        margin-top: 10px;
     }
     /*extra small screen css of slider navigation*/
     .slider-sec .navigate-arrow{
