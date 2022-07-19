@@ -734,6 +734,11 @@ header .navigation-toggle.fix-top .slider-social a{
            About card section css
 ====================================== */
 
+#shutDown {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
 .about-sec .about-cards{
     padding-top: 150px;
 }
