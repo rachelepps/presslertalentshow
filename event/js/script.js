@@ -80,7 +80,7 @@ jQuery(function ($) {
     /*********slider count down***********/
     /**************************************/
 
-    var countDownDate = new Date("Jul 23, 2022 17:00:00").getTime();
+    var countDownDate = new Date("Nov 12, 2023 17:00:00").getTime();
 
 // Update the count down every 1 second
     var x = setInterval(function () {
